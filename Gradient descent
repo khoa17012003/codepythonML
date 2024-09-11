@@ -12,5 +12,9 @@ def MyGrad(eta,x0):
             break
         x.append(x_new)
     return (it,x)
-(it,x)=MyGrad(0.01,-1)
-print(x[-1],cost(x[-1]),it)
+(it1,x1)=MyGrad(0.1,-5)
+(it2,x2)=MyGrad(0.1,5)
+(it3,x3)=MyGrad(0.01,-1)
+print(x1[-1],cost(x1[-1]),it1)
+print(x2[-1],cost(x2[-1]),it2)
+print(x3[-1],cost(x3[-1]),it3)
