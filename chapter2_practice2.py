@@ -1,8 +1,7 @@
 import numpy as np
 import math 
 import pandas as pd
-filepath = 'C:/Users/tuank/Desktop/python exercises/ex2.csv'
-data = pd.read_csv(filepath)
+data = pd.read_csv('Practic2_Chapter2.csv')
 x1 = data['TV']
 x2 = data['Radio']
 x3 = data['Newspaper']
