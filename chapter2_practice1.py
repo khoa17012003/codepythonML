@@ -18,7 +18,6 @@ def Gradient_Descent(x,y,Theta0,Theta1,learning_rate):
     Theta0 = Gradient_Descent0
     Theta1 = Gradient_Descent1
     return Theta0, Theta1
-cost_finale = []
 Theta0 = 0
 Theta1 = 0.5
 learning_rate = 1e-6
