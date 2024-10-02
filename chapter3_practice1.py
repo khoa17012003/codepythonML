@@ -32,5 +32,4 @@ iteration = 1000
 for i in range(0,iteration):
     Theta0, Theta1 = gradient_descent(x, y, Theta0, Theta1, learning_rate)
 cos = costfunc(x, y, Theta0, Theta1)
-print(F"{Theta0} + {Theta1}*x")
-print(cos)
+print(f"Theta0: {Theta0}, Theta1: {Theta1} và costfuntion: {cos}")
