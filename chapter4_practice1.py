@@ -24,8 +24,8 @@ def costfunc(x1, x2, y_true, Theta0, Theta1,Theta2 ):
 def gradient_descent(x1, x2, y, Theta0, Theta1, Theta2, learning_rate):
     m=len(x1)
     Gradient_Descent0 = Theta0 - learning_rate * (1/m) * np.sum(predict(x1, x2, Theta0, Theta1, Theta2) - y)
-    Gradient_Descent1 = Theta1 - learning_rate * (1/m) * (np.sum((predict(x1, x2, Theta0, Theta1, Theta2) - y)*x1)+ learning_rate*(lambda_reg/m)*Theta1)
-    Gradient_Descent2 = Theta2 - learning_rate * (1/m) * (np.sum((predict(x1, x2, Theta0, Theta1, Theta2) - y)*x2)+ learning_rate*(lambda_reg/m)*Theta2)
+    Gradient_Descent1 = Theta1 - learning_rate * (1/m) * (np.sum((predict(x1, x2, Theta0, Theta1, Theta2) - y)*x1) + lambda_reg*Theta1)
+    Gradient_Descent2 = Theta2 - learning_rate * (1/m) * (np.sum((predict(x1, x2, Theta0, Theta1, Theta2) - y)*x2) + lambda_reg*Theta2)
     Theta0 = Gradient_Descent0
     Theta1 = Gradient_Descent1
     Theta2= Gradient_Descent2
